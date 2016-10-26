@@ -1,0 +1,19 @@
+/*--- Footer ---*/
+.footer-wrapper{
+    width: 100%;
+    background-color: $mainColor;
+    min-height: 60px;
+    padding: 0.1em;
+}
+
+.footer{
+    width: 80%;
+    max-width: 1600px;
+    margin: 2em auto;
+    text-align: center;
+    font-size: 0.8em;
+
+    a{
+        color: $backgroundColor;
+    }
+}

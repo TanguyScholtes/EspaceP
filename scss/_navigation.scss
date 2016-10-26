@@ -1,0 +1,79 @@
+/*--- Navigation ---*/
+.site-title{
+    font-size: 32px;
+    margin: 1em 0;
+    width: 5.75em;
+    margin: 0.25em;
+    padding: 0.25em;
+    background-image: url("img/logo-white.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    text-align: right;
+    a{
+        color: $backgroundColor;
+        text-decoration: none;
+        transition: text-shadow 500ms ease;
+        &:hover{
+            text-shadow: 2px 2px 0 $mainColorDark;
+            transition: text-shadow 500ms ease;
+        }
+    }
+}
+
+.site-description, .secondary-toggle{
+    display: none;
+}
+
+.sidebar{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $mainColor;
+    color: $backgroundColor;
+    border-bottom: 2px solid $mainColorDark;
+}
+
+.header{
+    width: 80%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.secondary{
+    display: inline-block;
+    margin: 0 0 0 auto;
+    &:after{
+        display: block;
+        content: " ";
+        clear: both;
+    }
+}
+
+.site-branding{
+    display: inline-block;
+}
+
+.navigation{
+    text-align: right;
+
+    .menu-item{
+        font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        display: inline-block;
+        text-align: center;
+
+        a{
+            padding: 0.5em 1em;
+            text-align: center;
+            text-decoration: none;
+            color: $backgroundColor;
+            transition: background-color 500ms ease;
+            &:hover{
+                background-color: $mainColorDark;
+                transition: background-color 500ms ease;
+            }
+        }
+    }
+}

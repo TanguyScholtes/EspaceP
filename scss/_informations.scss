@@ -1,0 +1,39 @@
+.informations-wrapper{
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.info-type{
+    text-align: center;
+    width: 23%;
+    border: 1px solid $mainColor;
+}
+
+.info-type--title{
+}
+
+.info-type--text{
+    font-size: 0.8em;
+}
+
+.info-type--button{
+    width: 100%;
+    background-color: $mainColor;
+    border-bottom: 2px solid $mainColorDark;
+
+    a{
+        display: inline-block;
+        background-color: $mainColor;
+        color: white;
+        transition: background-color 500ms ease, text-decoration 500ms ease;
+        width: 100%;
+        padding: 1em 0;
+        &:hover{
+            background-color: $mainColorDark;
+            color: white;
+            text-decoration: none;
+            transition: background-color 500ms ease, text-decoration 500ms ease;
+        }
+    }
+}

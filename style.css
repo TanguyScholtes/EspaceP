@@ -1,0 +1,264 @@
+/*--- Resets ---*/
+/*
+Theme Name: Espace P
+Theme URI:
+Author: Tanguy Scholtes
+Author URI: https://tanguyscholtes.be/
+Description: A Wordpress theme tailored for Espace P ASBL
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: espace p, espace, p, asbl
+Text Domain: espacep
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/*--- Resets ---*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*--- Fonts import ---*/
+/*--- Base styles ---*/
+/*--- Base styles ---*/
+html {
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; }
+
+h1 {
+  font-size: 2em;
+  margin: 1em 0; }
+
+h2 {
+  font-size: 1.75em;
+  margin: 1em 0; }
+
+h3 {
+  font-size: 1.5em;
+  margin: 1em 0; }
+
+p {
+  margin: 1em 0;
+  line-height: 1.5em; }
+
+/*--- Variables ---*/
+/*--- Colors ---*/
+/*--- Main styles ---*/
+html {
+  background-color: #323232; }
+
+body {
+  color: black;
+  font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #ebebeb;
+  width: 80%;
+  max-width: 1600px;
+  margin: 2em auto 0 auto; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #831111; }
+
+.hidden {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; }
+
+a, .link {
+  color: #831111; }
+  a:hover, .link:hover {
+    color: #5c0c0c; }
+
+/*--- Partials ---*/
+/*--- Navigation ---*/
+.site-title {
+  font-size: 32px;
+  margin: 1em 0;
+  width: 5.75em;
+  margin: 0.25em;
+  padding: 0.25em;
+  background-image: url("img/logo-white.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  text-align: right; }
+  .site-title a {
+    color: #ebebeb;
+    text-decoration: none;
+    -webkit-transition: text-shadow 500ms ease;
+    transition: text-shadow 500ms ease; }
+    .site-title a:hover {
+      text-shadow: 2px 2px 0 #5c0c0c;
+      -webkit-transition: text-shadow 500ms ease;
+      transition: text-shadow 500ms ease; }
+
+.site-description, .secondary-toggle {
+  display: none; }
+
+.sidebar {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #831111;
+  color: #ebebeb;
+  border-bottom: 2px solid #5c0c0c; }
+
+.header {
+  width: 80%;
+  max-width: 1600px;
+  margin: 0 auto; }
+
+.secondary {
+  display: inline-block;
+  margin: 0 0 0 auto; }
+  .secondary:after {
+    display: block;
+    content: " ";
+    clear: both; }
+
+.site-branding {
+  display: inline-block; }
+
+.navigation {
+  text-align: right; }
+  .navigation .menu-item {
+    font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: inline-block;
+    text-align: center; }
+    .navigation .menu-item a {
+      padding: 0.5em 1em;
+      text-align: center;
+      text-decoration: none;
+      color: #ebebeb;
+      -webkit-transition: background-color 500ms ease;
+      transition: background-color 500ms ease; }
+      .navigation .menu-item a:hover {
+        background-color: #5c0c0c;
+        -webkit-transition: background-color 500ms ease;
+        transition: background-color 500ms ease; }
+
+.main {
+  padding: 1.5em; }
+  .main h2 {
+    margin-top: 0; }
+
+.content-preview {
+  margin: 1em 0;
+  border: 1px solid #831111;
+  border-radius: 1em;
+  padding: 1em; }
+  .content-preview ul {
+    list-style-type: disc;
+    padding-left: 1em; }
+  .content-preview li {
+    margin: 0.5em 0; }
+
+.media {
+  margin: 2em 0; }
+
+.informations-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.info-type {
+  text-align: center;
+  width: 23%;
+  border: 1px solid #831111; }
+
+.info-type--text {
+  font-size: 0.8em; }
+
+.info-type--button {
+  width: 100%;
+  background-color: #831111;
+  border-bottom: 2px solid #5c0c0c; }
+  .info-type--button a {
+    display: inline-block;
+    background-color: #831111;
+    color: white;
+    -webkit-transition: background-color 500ms ease, text-decoration 500ms ease;
+    transition: background-color 500ms ease, text-decoration 500ms ease;
+    width: 100%;
+    padding: 1em 0; }
+    .info-type--button a:hover {
+      background-color: #5c0c0c;
+      color: white;
+      text-decoration: none;
+      -webkit-transition: background-color 500ms ease, text-decoration 500ms ease;
+      transition: background-color 500ms ease, text-decoration 500ms ease; }
+
+/*--- Footer ---*/
+.footer-wrapper {
+  width: 100%;
+  background-color: #831111;
+  min-height: 60px;
+  padding: 0.1em; }
+
+.footer {
+  width: 80%;
+  max-width: 1600px;
+  margin: 2em auto;
+  text-align: center;
+  font-size: 0.8em; }
+  .footer a {
+    color: #ebebeb; }
+
+.banner {
+  width: 100%;
+  max-width: 1600px;
+  height: 300px;
+  background-image: url("img/banner.jpg");
+  background-position: center;
+  box-shadow: inset 5px 5px 25px black; }

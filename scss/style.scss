@@ -1,0 +1,51 @@
+/*--- Resets ---*/
+@import 'wordpress-theme';
+
+/*--- Resets ---*/
+@import 'meyerReset';
+
+/*--- Fonts import ---*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/*--- Base styles ---*/
+@import "base";
+
+/*--- Variables ---*/
+@import "colors";
+
+/*--- Main styles ---*/
+html{
+    background-color: $siteBackground;
+}
+body{
+    color: black;
+    font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: $backgroundColor;
+    width: 80%;
+    max-width: 1600px;
+    margin: 2em auto 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: $mainColor;
+}
+
+.hidden{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+a, .link{
+    color: $mainColor;
+    &:hover{
+        color: $mainColorDark;
+    }
+}
+
+/*--- Partials ---*/
+@import "navigation";
+@import "main";
+@import "informations";
+@import "footer";
+@import "banner";
